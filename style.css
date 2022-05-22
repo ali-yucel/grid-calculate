@@ -1,0 +1,49 @@
+
+  
+  label{
+    display: block;
+  }
+  
+  a#submit-btn {
+    cursor: pointer;
+  }
+
+  input {
+    height: 45px !important;
+  }
+
+  .custom-checkboxs {
+    display: flex;
+    align-items: center;
+  } 
+
+  .custom-checkboxs > div{
+    flex: 1 0 0;
+    margin-bottom: 0;
+  } 
+
+  .custom-checkboxs > div:not(:last-child){
+    margin-right: 10px; 
+  } 
+
+  .custom-checkboxs > div input[type=checkbox] {
+    position: absolute;
+    left: -9999em;
+  }
+
+  .custom-checkboxs > div input[type=checkbox] + label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px; 
+    border-radius: .25rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 5px 10px; 
+   
+  }
+
+  .custom-checkboxs > div input[type=checkbox]:checked + label {
+    color: #007bff;
+    border-color: #007bff;
+  }
